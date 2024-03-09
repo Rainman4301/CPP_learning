@@ -1,0 +1,66 @@
+!table
+!version 300
+!charset WindowsTradChinese
+
+Definition Table
+  Type NATIVE Charset "WindowsTradChinese"
+  Fields 59
+    ¨t²ÎID Char (11) Index 1 ;
+    HBrdg_ID Char (16) Index 2 ;
+    HBrdg_Name Char (54) ;
+    Mof_ID Char (1) ;
+    M_Office Char (6) ;
+    HwBrnch_ID Char (3) ;
+    HwBranch Char (8) ;
+    Route_ID Char (4) ;
+    Route_Name Char (40) ;
+    Mileage Decimal (5, 1) ;
+    Town_Code Char (6) ;
+    Fullname Char (16) ;
+    Tract Char (7) ;
+    Soiltype Decimal (1, 0) ;
+    Class Char (6) ;
+    Dsg_Year Decimal (4, 0) ;
+    Comp_year Decimal (4, 0) ;
+    ConstrYear Integer ;
+    Z_coeff Decimal (5, 3) ;
+    Soiltype_2 Decimal (1, 0) ;
+    SoilTypeEx Decimal (1, 0) ;
+    SoilLqf Decimal (1, 0) ;
+    LandSlide Decimal (1, 0) ;
+    Waterdepth Decimal (6, 1) ;
+    Length Decimal (8, 2) ;
+    Width Decimal (6, 2) ;
+    Deck_area Float ;
+    Numunits Integer ;
+    Numspans Integer ;
+    Maxspanlen Float ;
+    Skewangle Decimal (5, 1) ;
+    FoundType Decimal (1, 0) ;
+    Ft_val Decimal (3, 1) ;
+    ScourDepth Decimal (6, 2) ;
+    Intrp_Cost Decimal (7, 3) ;
+    Cost Decimal (13, 3) ;
+    MajorAngle Smallint ;
+    X Float ;
+    Y Float ;
+    HBrdg_ID_2 Char (15) Index 3 ;
+    ExceedD2 Decimal (7, 5) ;
+    ExceedD3 Decimal (7, 5) ;
+    ExceedD4 Decimal (7, 5) ;
+    D5 Decimal (7, 5) ;
+    D4 Decimal (7, 5) ;
+    D3 Decimal (7, 5) ;
+    D2 Decimal (7, 5) ;
+    Kmod1 Decimal (5, 3) ;
+    Kmod2 Decimal (5, 3) ;
+    Power Decimal (5, 1) ;
+    Prob_Fail Decimal (7, 5) ;
+    DmgState Decimal (1, 0) ;
+    Cost_2 Decimal (10, 2) ;
+    DmgRatio Decimal (7, 5) ;
+    Str_Loss Decimal (10, 3) ;
+    Repair_Avg Decimal (7, 2) ;
+    Repair_Std Decimal (7, 2) ;
+    Intrp_Loss Decimal (10, 3) ;
+    Loss Decimal (10, 2) ;

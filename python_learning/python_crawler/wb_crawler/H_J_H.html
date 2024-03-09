@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<!DOCTYPE html>
+<head>
+    <title>內嵌 JavaScript 和 HTML 範例</title>
+</head>
+<body>
+    <h1>內嵌 JavaScript 和 HTML 範例</h1>
+
+    <!-- 內嵌 JavaScript 代碼 -->
+    <script>
+        function displayPopup() {
+            // 創建一個彈出窗口
+            var popup = window.open('', 'myPopup', 'width=300,height=200');
+            
+            // 在彈出窗口中內嵌 HTML 內容
+            var popupContent = '<html><head><title>內嵌 HTML</title></head><body>';
+            popupContent += '<h2>這是內嵌的 HTML 內容</h2>';
+            popupContent += '<p>內嵌 HTML 內容中的文字。</p>';
+            popupContent += '</body></html>';
+            
+            popup.document.open();
+            popup.document.write(popupContent);
+            popup.document.close();
+        }
+    </script>
+
+    <button onclick="displayPopup()">顯示彈出窗口</button>
+</body>
+</html>

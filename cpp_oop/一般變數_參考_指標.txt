@@ -1,0 +1,65 @@
+
+
+指標參數:
+	1.如果接收到的argument是空值會出錯。
+	2.如果接收到的argument是不存在名稱的動態記憶體會出錯，ex new class()
+
+指標參考:
+	1.只能是"已存在的指標"才能指派給"指標參考"
+
+=> 上述兩種方式最好是寫個防呆機制 if(parameter == NULL){}
+
+
+
+參考參數:
+	1.如果要回傳參考物件要回傳已存在的物件
+	
+
+
+
+
+
+指標:
+(參數)
+為了避免不必要的產生新的記憶體空間
+(回傳值)
+為了當作其他函式參數
+(defect)
+如果傳進的參數是NULL程式不會報錯
+
+
+
+參考:
+(參數)
+為了避免不必要的產生新的記憶體空間
+(回傳值)
+為了當作其他函式參數
+(perfect)
+如果傳進的參數是NULL程式會報錯
+必須是已存在之變數or物件才可以指派給此參數
+
+
+參考、指標:
+都要有防呆機制for傳進參數==NULL
+
+
+
+
+
+Overloading:(Polymorphism 可幫助減少overloading)
+
+
+Override(一定會用到:Virtual_function: 如果父類別與子類別都有同名之虛擬函式並且都有各自的實作 則也算 override)
+hidden(沒有用:Virtual_function)
+
+
+Polymorphism(子類別宣告之物件可以assign to 父類別"但只能操作父類別的成員與函式")
+(如果要真正達到Polymorphism之功能 要使用Virtual_function 才可以操作此子類別之函式)
+
+
+
+Dynamic_cast(動態轉型 e.g 父類別指標 轉型成 子類別)
+
+
+
+
