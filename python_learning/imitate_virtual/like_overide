@@ -1,0 +1,27 @@
+class Animal:
+    def make_sound(self):
+        # This is a virtual function
+        # It will be overridden by subclasses
+        raise NotImplementedError("Subclasses must implement make_sound method")
+
+class Dog(Animal):
+    def make_sound(self):
+        return "Woof!"
+
+class Cat(Animal):
+    def make_sound(self):
+        return "Meow!"
+
+class Cow(Animal):
+    def make_sound(self):
+        return "Moo!"
+
+# Create instances of different animals
+dog = Dog()
+cat = Cat()
+cow = Cow()
+
+# Call the make_sound method on each animal
+print(dog.make_sound())  # Output: Woof!
+print(cat.make_sound())  # Output: Meow!
+print(cow.make_sound())  # Output: Moo!
