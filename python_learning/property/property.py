@@ -84,11 +84,11 @@ class Q11Employee:
         self._account = None
         self._salary = None
 
-    @property
+    @property                           # getter
     def name(self):
         return self._name
 
-    @name.setter
+    @name.setter                        # setter
     def name(self, value):
         self._name = value
 
