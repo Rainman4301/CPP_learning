@@ -143,3 +143,9 @@ print("Wages for 12 months:", q11_o.wages(12))
 
 
 
+
+
+
+
+
+
