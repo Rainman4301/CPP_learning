@@ -1,4 +1,5 @@
 
+# __add__ overrides the addition (+) operator.
 # __sub__ overrides the subtraction (-) operator.
 # __mul__ overrides the multiplication (*) operator.
 # __truediv__ or __div__ (in Python 2) overrides the division (/) operator.
@@ -14,6 +15,13 @@
 
 
 
+
+class Adder:
+    def __init__(self, value):
+        self.value = value
+
+    def __add__(self, other):
+        return Adder(self.value + other.value)
 
 
 class Vector:
